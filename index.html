@@ -20,14 +20,20 @@
         <section class="section-cadastrar" style="background-color: rgb(230, 225, 225);">
 
             <form id="form-cadastro" action="cadastrar_pessoa.php" method="POST">
-                <h1>Cadastro de Pessoa</h1> <br><br>
+                <h1>Salvar pessoa</h1> <br><br>
+                <div class="div-id"> 
+                    <label>Id</label> 
+                    <input id="input-id" type="text" name="id" disabled="true" />
+                </div>
+                <br>
+
                 <label>Nome</label> <br>
                 <input type="text" name="nome" /><br><br>
 
                 <label>CPF</label><br>
                 <input type="text" id="cpf" name="cpf" maxlength="11"><br><br>
 
-                <button class="button-send" id="button-cadastrar">Cadastrar</button>
+                <button class="button-send" id="button-cadastrar" >Salvar</button>
             </form>
 
         </section>
@@ -39,18 +45,21 @@
                     <th>Nome</th>
                     <th>CPF</th>
                     <th></th>
+                    <th></th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Jonas Alves oolva</td>
                     <td>03456728576</td>
                     <td><button class="button-deletar">Excluir</button></td>
+                    <td><button class="button-editar">Editar</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Giovana Vasconcelos</td>
                     <td>05668748956</td>
                     <td><button class="button-deletar">Excluir</button></td>
+                    <td><button class="button-editar">Editar</button></td>
                 </tr>
             </table>
 
